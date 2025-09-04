@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="utility.css">
+    <title>Spotify - Web Player: Music for everyone</title>
+</head>
+
+<body>
+
+    <div class="header display ">
+
+        <div class="logo invert">
+            <img src="logo.svg" alt="Spoftify Logo">
+        </div>
+
+        <div class="nav-center display align">
+            <div class="home display">
+                <img class="invert" src="home.svg" alt="Home">
+            </div>
+            <div class="search display align">
+                <img src="search.svg" alt="Search">
+                <input type="search" placeholder="What do you want to play?">
+            </div>
+        </div>
+
+        <div class="nav-right display align justify">
+            <ul class="display">
+                <li>Premium</li>
+                <li>Support</li>
+                <li>Download</li>
+            </ul>
+            <div class="separator"></div>
+            <div class="button-right display align justify">
+                <button class="btn Install cursor">Install app</button>
+                <button class="btn sign-up cursor">Sign up</button>
+                <button class="btn log-in cursor rounded">Log in</button>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="main display  ">
+
+        <div class="left m-2  align rounded">
+
+            <div class="library display">
+                <h3>Your Library</h3>
+                <img src="plus.svg" alt="Plus">
+            </div>
+
+            <div class="song-list rounded ">
+            </div>
+
+            <div class="left-footer  ">
+                <ul>
+                    <li>Legal</li>
+                    <li>Safety & Privacy Center</li>
+                    <li>Privacy Policy</li>
+                    <li>Cookies</li>
+                    <li>About Us</li>
+                    <li>Accessibility</li>
+                </ul>
+                <p><a href="#">Cookies</a></p>
+                <button class="lang-btn display align  "><img class="invert" src="globe.svg"
+                        alt="Globe">English</button>
+            </div>
+        </div>
+
+        <div class="right relative rounded ">
+
+            <h3>Trending Songs</h3>
+
+            <div class="songContainer  display  ">
+                <div class="song-cards relative ">
+                    <img src="https://i.scdn.co/image/ab67616d00001e023dc5639cb321a69b721bed92" alt="">
+                    <div class="play-hover display">
+                        <img class="invert pointer " src="play.svg" alt="play">
+                    </div>
+
+                    <div class="songInfo">
+                        <div class="songName">For A Reason</div>
+                        <div class="songArtist">Karan Aujla, Ikky</div>
+                    </div>
+                </div>
+                <div class="song-cards relative ">
+                    <img src="https://i.scdn.co/image/ab67616d00001e023dc5639cb321a69b721bed92" alt="">
+                    <div class="play-hover display pointer">
+                        <img class="invert " src="play.svg" alt="play">
+                    </div>
+
+                    <div class="songInfo">
+                        <div class="songName">For A Reason</div>
+                        <div class="songArtist">Karan Aujla, Ikky</div>
+                    </div>
+                </div>
+                <div class="song-cards relative ">
+                    <img src="https://i.scdn.co/image/ab67616d00001e023dc5639cb321a69b721bed92" alt="">
+                    <div class="play-hover display">
+                        <img class="invert" src="play.svg" alt="play">
+                    </div>
+
+                    <div class="songInfo">
+                        <div class="songName">For A Reason</div>
+                        <div class="songArtist">Karan Aujla, Ikky</div>
+                    </div>
+                </div>
+
+
+
+            </div>
+
+        </div>
+    </div>
+    <div class="footer display align">
+        <div class="footerLeft display align  ">
+            <div class="footerSongImg bg-none ">
+                <img class="rounded" src="https://i.scdn.co/image/ab67616d00001e023dc5639cb321a69b721bed92" alt="">
+            </div>
+            <div class="footerSongDetails">
+
+                <div class="songName">
+                    <p></p>
+                </div>
+                <div class="songArtist">
+                    <p>Karaun Aujla, Ikky</p>
+                </div>
+            </div>
+        </div>
+        <div class="footerCenter  ">
+            <div class="songControls display align justify ">
+                <img id="previous" class="pointer" src="previous.svg" alt="previous">
+                <img id="pause" class="pointer" src="play.svg" alt="pause">
+                <img id="next" class="pointer" src="next.svg" alt="next">
+            </div>
+            <div class="seekbarInfo relative display ">
+                <div class="songTime">00:00</div>
+                <div class="seekBar rounded ">
+                    <div class="circle"></div>
+                </div>
+                <div class="songCurrentTime">00:00</div>
+            </div>
+        </div>
+        <div class="footerRight display align justify ">
+            Audio Control Here
+        </div>
+    </div>
+
+
+
+
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>

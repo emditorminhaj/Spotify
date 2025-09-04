@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=TASA+Orbiter:wght@400..800&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "TASA Orbiter", sans-serif;
+    font-optical-sizing: auto;
+}
+
+body {
+    background-color: black;
+    color: white;
+}
+
+.display {
+    display: flex;
+}
+
+.justify {
+    justify-content: center;
+}
+
+.align {
+    align-items: center;
+}
+
+.border {
+    border: 2px solid red;
+}
+
+.invert {
+    filter: invert(1);
+}
+
+.separator {
+    margin-left: 20px;
+    width: 1.5px;
+    height: 40%;
+    background-color: white;
+}
+
+.m-2{
+    margin:0 10px ;
+}
+
+.rounded{
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar {
+  width: 15px;       /* makes it wide */
+}
+
+::-webkit-scrollbar-track {
+  background: #282828a7; /* dark track */
+}
+
+::-webkit-scrollbar-thumb {
+  background: #595858c0; /* block thumb */
+  border-radius: 2px;    /* sharp edges */
+}
+
+::-webkit-scrollbar-button {
+  display: none;       /* hide arrows */
+  width: 0;
+  height: 0;
+}
+
+.relative{
+    position: relative;
+}
+
+
+.cursor{
+    cursor: pointer;
+}
+
+.bg-none{
+    background: none;
+}
+
+.pointer{
+    cursor: pointer;
+}
+
