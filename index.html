@@ -4,8 +4,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="utility.css">
+    <link rel="stylesheet" href="utilities.css">
     <title>Spotify - Web Player: Music for everyone</title>
 </head>
 
@@ -122,31 +123,46 @@
             </div>
             <div class="footerSongDetails">
 
-                <div class="songName">
-                    <p></p>
+                <div class="songName ">
+                    <p class="footerSongName">No song Playing</p>
                 </div>
-                <div class="songArtist">
-                    <p>Karaun Aujla, Ikky</p>
+
+                <div class="songArtist ">
+                    <p class="footersongArtist">---</p>
                 </div>
+
             </div>
         </div>
+
         <div class="footerCenter  ">
             <div class="songControls display align justify ">
                 <img id="previous" class="pointer" src="previous.svg" alt="previous">
                 <img id="pause" class="pointer" src="play.svg" alt="pause">
                 <img id="next" class="pointer" src="next.svg" alt="next">
             </div>
+
             <div class="seekbarInfo relative display ">
-                <div class="songTime">00:00</div>
+                <span class="songCurrentTime"></span>
                 <div class="seekBar rounded ">
+                    <div class="progress"></div> <!-- NEW: fill bar -->
                     <div class="circle"></div>
                 </div>
-                <div class="songCurrentTime">00:00</div>
+                <span class="songTime"></span>
             </div>
+
+
         </div>
+
         <div class="footerRight display align justify ">
-            Audio Control Here
+            <div class="volumeBar">
+                <div class="volumeProgress"></div>
+                <div class="volumeCircle"></div>
+            </div>
+            <img id="mute" class="pointer" src="volume.svg" alt="Mute/Unmute">
+            <img id="loop" class="pointer" src="loop.svg" alt="Loop">
         </div>
+
+
     </div>
 
 

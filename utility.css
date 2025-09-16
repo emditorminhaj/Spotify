@@ -84,3 +84,105 @@ body {
     cursor: pointer;
 }
 
+.seekBar {
+    position: relative;
+    height: 6px;
+    width: 50%;
+    margin: 10px auto;
+    background-color: #444;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.progress {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 0%;
+    background: #1db954; /* Spotify green */
+    border-radius: 5px;
+}
+
+.circle {
+    position: absolute;
+    top: 50%;
+    left: 0%;
+    height: 14px;
+    width: 14px;
+    border-radius: 50%;
+    background-color: #fff;
+    border: 2px solid #1db954;
+    transform: translate(-50%, -50%);
+    cursor: pointer;
+    transition: none;  /* 🔥 removes lag */
+}
+
+.seekBar {
+  position: relative;
+  height: 6px;
+  background: #444;
+  cursor: pointer;
+  border-radius: 3px;
+}
+
+.seekBar .progress {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  background: #1db954; /* Spotify green */
+  border-radius: 3px;
+  width: 0%;
+}
+
+.seekBar .circle {
+  position: absolute;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 14px;
+  height: 14px;
+  background: #fff;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: background 0.2s ease;
+}
+
+.seekBar .circle:hover {
+  background: #1db954;
+}
+
+.volumeBar {
+  position: relative;
+  width: 120px;
+  height: 6px;
+  background: #444;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+.volumeProgress {
+  position: absolute;
+  height: 100%;
+  background: #1db954; /* green fill */
+  width: 100%; /* start at full */
+  border-radius: 3px;
+}
+
+.volumeCircle {
+  position: absolute;
+  top: 50%;
+  left: 100%;
+  transform: translate(-50%, -50%);
+  width: 14px;
+  height: 14px;
+  background: #1db954;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+.volumeCircle:hover {
+  transform: translate(-50%, -50%) scale(1.2);
+}
+
